@@ -1,0 +1,10 @@
+# Sample Prompts for HealthAssist AI
+
+1. "I have a mild headache and light fever. What should I do?"
+2. "Explain dengue symptoms in simple terms."
+3. "What are safe home remedies for cough?"
+4. "Is it okay to exercise with a cold?"
+5. "Give me a quick summary of diabetes in 3 bullet points."
+6. "What symptoms indicate I should visit a doctor?"
+7. "What foods help with stomach acidity?"
+8. "Explain what vitamin D deficiency feels like."
