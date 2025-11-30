@@ -1,50 +1,46 @@
-# HealthAssist AI 🧠💬  
-### *Medical Advice Assistant using Llama-3 (Open Source) + Streamlit*
+# 🎨 Text2ImageGen-AI
+### Text-to-Image Generator using Stable Diffusion v1.5 + Streamlit
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Python](https://img.shields.io/badge/python-3.10+-yellow)
-![Streamlit](https://img.shields.io/badge/Streamlit-Enabled-red)
-![Model](https://img.shields.io/badge/Model-Llama--3.2--1B-orange)
-![Contributions](https://img.shields.io/badge/Contributions-Welcome-success)
+A clean, fast and powerful text-to-image generation app built using:
 
----
+- 🧠 **Stable Diffusion v1.5**
+- ⚡ **Diffusers**
+- 🎨 **Streamlit**
+- 🔥 **Torch (CUDA supported)**
 
-## 📌 Overview  
-HealthAssist AI is an intelligent, local-first medical advice assistant built using:
+This project turns natural language prompts into high-quality images.
 
-- **Llama-3.2-1B (Quantized – CPU friendly)**
-- **Streamlit UI**
-- **Prompt-engineering-based reasoning**
-- **Safety layer + hallucination protection**
+<p align="center"> <img src="outputs/demo.png" alt="Text2ImageGen-AI Demo" width="700"/> </p>
 
-This project is designed for beginners and intermediate ML engineers who want to *build and deploy an open‑source LLM medical assistant* without relying on expensive cloud APIs.
-
-⚠️ *Disclaimer: This tool does **not** replace professional medical diagnosis. It is only for educational purposes.*
 
 ---
 
 ## 🚀 Features  
-- ✔️ Local inference — no external API required  
-- ✔️ Lightweight CPU model  
-- ✔️ Multi‑turn medical chat  
-- ✔️ “Low-risk advice only” safety filter  
-- ✔️ Explanation mode (simple vs. detailed)  
-- ✔️ Clean Streamlit UI  
+- ✔️ Generate high-quality images from text
+
+- ✔️ Supports SD, SD Turbo, SDXL, Open Source LLMs
+
+- ✔️ Adjustable: Steps, Guidance Scale, Resolution
+
+- ✔️ Live preview in Streamlit
+
+- ✔️ Image download option
+
+- ✔️ Local inference or HuggingFace API 
 
 ---
 
 ## 📂 Project Structure  
 ```
-HealthAssist-AI/
+Text2ImageGen-AI/
 │── app.py
-│── model/
-│     ├── llama-3.2-1b-gguf.bin
-│── assets/
+│── models/
+│     ├── your_model_files_here...
+│── samples/
 │     ├── sample_prompts.txt
-│── README.md
+│     ├── demo.png
 │── requirements.txt
-```
+│── README.md
 
 ---
 
@@ -52,19 +48,30 @@ HealthAssist-AI/
 ```
 pip install -r requirements.txt
 streamlit run app.py
+
 ```
 
 ---
 
 ## 📘 Sample Prompts  
-See `assets/sample_prompts.txt` for high-quality prompts.
+See `samples/sample_prompts.txt` for high-quality prompts.
+Examples:
+
+“Cyberpunk city with neon lights, ultra-detailed, 4K”
+
+“Cute robot learning to paint, Pixar style”
+
+“Ancient temple floating in the clouds, epic lighting”
+
+“Tiger wearing sunglasses on a beach, hyperrealistic”
 
 ---
 
 ## 🧪 Testing  
 Run:
 ```
-python test_model.py
+streamlit run app.py
+
 ```
 
 ---
