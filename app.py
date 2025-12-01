@@ -66,7 +66,7 @@ if generate_btn:
     filename = f"outputs/{uuid.uuid4().hex}.png"
     image.save(filename)
 
-    st.image(image, caption="Generated Image", use_column_width=True)
+    st.image(image, caption="Generated Image", width='stretch')
     st.success("Image generated successfully!")
 
     with open(filename, "rb") as img_file:
